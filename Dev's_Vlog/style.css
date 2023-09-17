@@ -1,0 +1,371 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color:rgb(5, 10, 21);
+}
+body{
+  /*background-color: rgb(0, 0, 0);*/
+  background-color:rgb(5, 10, 21);
+}
+
+.navbar-brand {
+  order: 0; /* Set the brand to the left */
+}
+.navbar-brand:hover{
+  color: rgb(255, 255, 255);
+}
+
+/* Custom styles for the sticky logo */
+.sticky-logo {
+  max-height: 40px; /* Adjust the height as needed */
+}
+
+/* Custom styles for the navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; 
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for a clean look */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-width);
+  padding: 0 1rem;
+  padding-top: 1rem;
+  z-index: 100;
+}
+
+/* Custom styles for the navbar links */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Link color */
+  margin-left: 20px; /* Adjust the spacing between links */
+
+}
+
+
+/* Adjust the responsive breakpoint for the navbar collapse (optional) */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+      margin-left: 0; /* Remove margin for mobile screens */
+      background-color:rgb(5, 10, 21);
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  background-color:rgb(5, 10, 21); /* Black background color */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.411); /* Shadow for the navbar */
+  background-color:rgb(5, 10, 21);
+}
+
+.navbar-brand {
+  color: #fff; /* White font color */
+  font-family: 'Your Fancy Font', sans-serif; /* Replace 'Your Fancy Font' with your desired font-family */
+  background-color:rgb(5, 10, 21);
+}
+
+.navbar-toggler-icon {
+   /* White background for the mobile menu icon */
+  color: #ffffff;
+  background-color:rgb(5, 10, 21);
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* Banner Styles */
+.Banner,
+.Banner_Two {
+  height: 90vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: var(--content-width);
+  padding: 0 2rem; 
+  background-color:rgb(5, 10, 21);
+}
+
+.Banner h1,
+.Banner_Two h1 {
+  color: #fff; /* White font color */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-family: 'Your Fancy Font', sans-serif; /* Replace 'Your Fancy Font' with your desired font-family */
+  text-align: center;
+  background-color:rgb(5, 10, 21);
+}
+
+/* Apply the fonts to the h1 and h2 */
+.Heading h1,
+.Heading h4,
+.Banner_Two h1,
+.Banner_Two h4 {
+  font-family: 'Poppins', sans-serif; /* Font 1 - Bold */
+  font-weight: 700; /* Bold */
+  font-size: 36px; /* Adjust the font size as needed */
+  background-color:rgb(5, 10, 21);
+}
+
+.Banner h4,
+.Banner_Two h4 {
+  font-family: 'Open Sans', sans-serif; /* Font 2 - Regular */
+  font-weight: 200; /* Regular */
+  font-size: 20px; /* Adjust the font size as needed */
+  background-color:rgb(5, 10, 21);
+}
+
+/* Rest of your CSS styles */
+
+/* Style the row */
+.Banner .row,
+.Banner_Two .row {
+  width: 100%;
+}
+
+/* Distribute space equally */
+.Banner .col-md-6,
+.Banner_Two .col-md-6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style the video container */
+.video-container img,
+.Banner_Two .video-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.video-container,
+.Banner_Two .video-container {
+  position: relative;
+  width: 100%; /* Set the width to 100% for responsiveness */
+  border-radius: 10px; /* Add border radius as per your preference */
+  overflow: hidden; /* Ensure the content within is clipped to the container */
+}
+
+/* Align text to the left */
+.Heading h1,
+.Heading h4,
+.Banner_Two h1,
+.Banner_Two h4 {
+    text-align: left;
+}
+
+/* For mobile screens, push the Heading below the video */
+@media (max-width: 767px) {
+    .Heading,
+    .Banner_Two .Heading {
+        text-align: left;
+        margin-top: -50px; 
+    }
+    .video-container,
+    .Banner_Two .video-container {
+      margin-top: 30px; 
+    }
+    .col-md-6.order-md-1,
+    .Banner_Two .col-md-6.order-md-1 {
+        order: 2; /* Change order for mobile */
+        text-align: center; /* Center align for mobile screens */
+    }
+}
+
+/* Rearrange Banner for mobile screens */
+@media (max-width: 767px) {
+  .Banner .row,
+  .Banner_Two .row {
+      flex-direction: column-reverse; /* Display video on top in mobile */
+  }
+  .video-container {
+    margin-bottom: 100px;
+  }
+  .Banner{
+    margin-top: 50px;
+  }
+}
+
+/* Additional margin-top for Banner_Two */
+.Banner_Two {
+  margin-top: -50px; /* Add your desired margin-top value */
+  height: 100vh;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Grid 1 and Grid 2 Styles (Assuming they have the same class) */
+.GridSection {
+  /* Add other styles for your grid sections as needed */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-width);
+  padding: 0 3rem;
+ 
+}
+
+.section-heading{
+  color:#f9f9f9;
+  background: #000;
+  background-color:rgb(5, 10, 21);
+}
+.card{
+  
+  color: #dacccc;
+  border-radius: 5px;
+  border-bottom-left-radius: -10px;
+  background-color:rgb(5, 10, 21);
+}
+
+.card-body{
+ 
+  color: #dacccc;
+  background-color:rgb(5, 10, 21);
+  
+}
+
+.card-img-top {  
+  max-width: 100%;
+  height: 250px;
+}
+/* Add this CSS for perfect responsiveness on mobile screens */
+.card-img-top {
+  max-width: 100%;
+  height: 270px;
+}
+
+/* Adjust spacing and margins for mobile screens */
+@media (max-width: 767px) {
+  .GridSection .row {
+    flex-direction: column;
+  }
+
+  .GridSection .col-lg-6.col-md-6.col-12.mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .article-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+ 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dacccc; /* Color when hovering over the thumb */
+}
+
+
+/* Custom scrollbar styles (as shown above) */
+
+/* Add margin for larger screens */
+@media (min-width: 768px) {
+  .navbar {
+      margin-left: 10px; /* Adjust the left margin as needed */
+      margin-right: 10px; /* Adjust the right margin as needed */
+  }
+  .Banner, .GridSection {
+      margin-left: 10px; /* Adjust the left margin as needed */
+      margin-right: 10px; /* Adjust the right margin as needed */
+  }
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* Add any additional styles as needed */
+
+/* Example: Style the footer */
+.footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  background-color:rgb(5, 10, 21);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-width);
+  padding: 0 1rem;
+  background-color:rgb(5, 10, 21);
+}
+
+
+
+
+
+
+
+
